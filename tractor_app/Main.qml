@@ -21,7 +21,8 @@ Window {
 
         Button{
             id: button
-            text: "Click me"
+            icon.name: "click-icon"
+            icon.source: "images/click.png"
             onClicked: helloPop.open()
         }
     }
