@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MyUI/PassCode.qml</file>
+    </qresource>
+</RCC>
