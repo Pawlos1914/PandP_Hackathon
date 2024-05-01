@@ -15,7 +15,7 @@ Window {
         anchors.centerIn: parent
 
         Text {
-            text: "Go Bananas!"
+            text: "    Go Bananas!"
             font.pixelSize: 26
         }
 
