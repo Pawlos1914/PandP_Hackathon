@@ -29,9 +29,11 @@ qt_add_qml_module(apptractor_app
         qml/Main.qml
         qml/PassCode.qml
     RESOURCES images/click.png
+    RESOURCES images/farmLand.jpg
     RESOURCES tractor_app.qrc
 SOURCES Forms/loginpage.h Forms/loginpage.cpp
 RESOURCES Forms/loginpage.ui
+QML_FILES qml/LoginPage.qml
 )
 
 

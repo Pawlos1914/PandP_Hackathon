@@ -3,31 +3,36 @@ import QtQuick.Window
 import QtQuick.Controls
 
 Window {
-    width: 640
-    height: 480
+    width: 480
+    height: 640
     visible: true
     title: qsTr("Hello World")
+    id: root
+
 
     Column {
         id: column
-        width: 125
-        height: 75
         anchors.centerIn: parent
 
-        TextField{
-            id: textfield
-            placeholderText: "Go bananas!"
+        Text {
+            text: "Go Bananas!"
+            font.pixelSize: 26
         }
 
-        Button{
-            id: button
-            icon.name: "click-icon"
-            icon.source: "../images/click.png"
-            onClicked: helloPop.open()
+        Image {
+            source: "../images/farmLand.jpg"
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                   console.info("image clicked!")
+                    var component = Qt.createComponent("LoginPage.qml");
+                    var window    = component.createObject(root);
+                    window.show();
+                    root.hide();
+                }
+            }
         }
     }
 
-    PassCode{
-        id: helloPop
-    }
 }
