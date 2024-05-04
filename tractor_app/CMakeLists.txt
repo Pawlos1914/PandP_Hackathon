@@ -16,6 +16,7 @@ qt_add_qml_module(apptractor_app
     URI tractor_app
     VERSION 1.0
     QML_FILES Main.qml
+    RESOURCES images/click.png
 )
 
 set_target_properties(apptractor_app PROPERTIES
